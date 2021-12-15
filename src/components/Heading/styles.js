@@ -1,8 +1,8 @@
 import styled, { css } from 'styled-components';
 
 export const Title = styled.h1`
-  ${({ theme }) =>
+  ${({ theme, light }) =>
     css`
-      color: ${theme.colors.mainBg};
+      color: ${light ? theme.colors.white : theme.colors.primaryColor};
     `}
 `;
