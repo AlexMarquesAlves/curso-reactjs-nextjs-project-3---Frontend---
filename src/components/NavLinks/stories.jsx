@@ -1,13 +1,14 @@
 import { NavLinks } from '.';
+import links from './mock';
 
 export default {
   title: 'NavLinks',
   component: NavLinks,
   args: {
-    children: 'NavLinks',
+    links: links,
   },
   argTypes: {
-    children: { type: 'string' },
+    links: { type: '' },
   },
 };
 
