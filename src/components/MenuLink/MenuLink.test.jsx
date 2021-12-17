@@ -14,15 +14,12 @@ describe('<MenuLink />', () => {
   });
 
   it('should open in newTab', () => {
-    renderTheme(
+    const { container } = renderTheme(
       <MenuLink link={'https://www.google.com.br/'} newTab={true}>
         Children
       </MenuLink>,
     );
-    expect(screen.getByRole('link', { name: 'Children' })).toHaveAttribute(
-      'target',
-      '_blank',
-    );
+    expect(container.firstChild).toHaveAttribute('target', '_blank');
   });
 
   it('should match snapshot', () => {
