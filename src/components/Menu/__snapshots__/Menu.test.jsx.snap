@@ -211,7 +211,7 @@ exports[`<Menu /> should not render links 1`] = `
             class="c8"
             href="#target"
           >
-            logo
+            Logo
           </a>
         </h1>
         <nav
@@ -224,7 +224,7 @@ exports[`<Menu /> should not render links 1`] = `
 </div>
 `;
 
-exports[`<Menu /> should render logo and main menu Nav 1`] = `
+exports[`<Menu /> should render Logo and Main Menu Nav 1`] = `
 .c4 {
   max-width: 120rem;
   margin: 0 auto;
@@ -462,7 +462,7 @@ exports[`<Menu /> should render logo and main menu Nav 1`] = `
             class="c8"
             href="#target"
           >
-            logo
+            Logo
           </a>
         </h1>
         <nav
