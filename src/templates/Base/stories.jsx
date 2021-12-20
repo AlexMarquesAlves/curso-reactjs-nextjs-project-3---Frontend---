@@ -5,7 +5,7 @@ import { GridText } from '../../components/GridText';
 import gridMock from '../../components/GridText/mock';
 
 export default {
-  title: 'Template/Base',
+  title: 'Templates/Base',
   component: Base,
   args: {
     children: (
@@ -18,9 +18,6 @@ export default {
       </>
     ),
     ...mock,
-  },
-  argTypes: {
-    children: { type: 'string' },
   },
 };
 

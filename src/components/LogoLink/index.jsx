@@ -1,7 +1,6 @@
 import P from 'prop-types';
 import * as Styled from './styles';
 import { Heading } from '../Heading';
-import { Link } from 'react-router-dom';
 
 export const LogoLink = ({ text, srcImg = '', link }) => {
   return (

@@ -1,8 +1,6 @@
 import P from 'prop-types';
 import * as Styled from './styles';
-
 import { Menu } from '../../components/Menu';
-import links from '../../components/NavLinks/mock';
 import { Footer } from '../../components/Footer';
 import { GoTop } from '../../components/GoTop';
 

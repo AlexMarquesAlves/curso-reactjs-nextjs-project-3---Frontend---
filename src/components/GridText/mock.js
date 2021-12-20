@@ -5,19 +5,28 @@ export default {
     'Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde',
   grid: [
     {
-      title: 'Teste 1',
-      description:
-        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores.',
+      altText: 'Teste 1',
+      srcImg: 'https://source.unsplash.com/random/800x800?r=1',
     },
     {
-      title: 'Teste 2',
-      description:
-        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores.',
+      altText: 'Teste 2',
+      srcImg: 'https://source.unsplash.com/random/800x800?r=2',
     },
     {
-      title: 'Teste 3',
-      description:
-        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores.',
+      altText: 'Teste 3',
+      srcImg: 'https://source.unsplash.com/random/800x800?r=3',
+    },
+    {
+      altText: 'Teste 4',
+      srcImg: 'https://source.unsplash.com/random/800x800?r=4',
+    },
+    {
+      altText: 'Teste 5',
+      srcImg: 'https://source.unsplash.com/random/800x800?r=5',
+    },
+    {
+      altText: 'Teste 6',
+      srcImg: 'https://source.unsplash.com/random/800x800?r=6',
     },
   ],
 };
