@@ -1,17 +1,17 @@
-import { GridImage } from '.';
+import { GridText } from '.';
 
 import mock from './mock';
 
 export default {
-  title: 'GridImage',
-  component: GridImage,
+  title: 'GridText',
+  component: GridText,
   args: mock,
 };
 
 export const Template = (args) => {
   return (
     <div>
-      <GridImage {...args} />
+      <GridText {...args} />
     </div>
   );
 };
