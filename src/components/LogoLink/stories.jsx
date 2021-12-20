@@ -5,11 +5,8 @@ export default {
   component: LogoLink,
   args: {
     text: 'LogoLink',
-    scrImg: 'assets/images/logo.svg',
-    link: 'https://localhost',
-  },
-  argTypes: {
-    children: { type: 'string' },
+    srcImg: 'assets/images/logo.svg',
+    link: 'http://localhost',
   },
 };
 
@@ -28,6 +25,7 @@ export const TextOnly = (args) => {
     </div>
   );
 };
+
 TextOnly.args = {
   srcImg: '',
 };

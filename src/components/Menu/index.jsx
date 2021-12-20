@@ -12,17 +12,17 @@ export const Menu = ({ links = [], logoData }) => {
 
   return (
     <>
-      <Styled.Buttom
+      <Styled.Button
         visible={visible}
         onClick={() => setVisible(true)}
-        aria-label="open/close menu"
+        aria-label="Open/Close menu"
       >
         {visible ? (
-          <CloseIcon aria-label="close menu" />
+          <CloseIcon aria-label="Close menu" />
         ) : (
-          <MenuIcon aria-label="open Menu" />
+          <MenuIcon aria-label="Open menu" />
         )}
-      </Styled.Buttom>
+      </Styled.Button>
       <Styled.Container visible={visible} onClick={() => setVisible(false)}>
         <SectionContainer>
           <Styled.MenuContainer>

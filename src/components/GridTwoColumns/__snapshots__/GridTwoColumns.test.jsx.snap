@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<GridTwoColum /> should render two column grid 1`] = `
+exports[`<GridTwoColumns /> should render two column grid 1`] = `
 .c5 {
   color: #0A1128;
   font-size: 6.4rem;
@@ -19,7 +19,6 @@ exports[`<GridTwoColum /> should render two column grid 1`] = `
 
 .c2 .c4 {
   margin-bottom: 4.0rem;
-  color: #0A1128;
 }
 
 .c1 {

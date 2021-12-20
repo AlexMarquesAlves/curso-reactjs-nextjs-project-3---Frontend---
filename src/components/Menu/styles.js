@@ -12,11 +12,9 @@ export const Container = styled.div`
     position: fixed;
     z-index: 5;
     top: 0;
-    right: 0;
-    bottom: 0;
     left: 0;
+    right: 0;
     width: 100%;
-    height: 100%;
     border-bottom: ${theme.colors.mediumGray};
     background: ${theme.colors.white};
     transition: all 300ms ease-in-out;
@@ -26,7 +24,7 @@ export const Container = styled.div`
       padding-bottom: 0;
     }
 
-    &${Heading} {
+    & ${Heading} {
       margin-top: 0;
       margin-bottom: 0;
     }
@@ -46,7 +44,7 @@ export const Container = styled.div`
         overflow-y: auto;
       }
 
-      &${Heading} {
+      & ${Heading} {
         padding-bottom: ${theme.spacings.large};
         display: flex;
         justify-content: center;
@@ -54,6 +52,7 @@ export const Container = styled.div`
     }
   `}
 `;
+
 export const MenuContainer = styled.div`
   ${({ theme }) => css`
     display: flex;
@@ -67,7 +66,8 @@ export const MenuContainer = styled.div`
     }
   `}
 `;
-export const Buttom = styled.button`
+
+export const Button = styled.button`
   ${({ theme, visible }) => css`
     z-index: 6;
     position: fixed;
@@ -83,7 +83,7 @@ export const Buttom = styled.button`
 
     @media ${theme.media.lteMedium} {
       display: flex;
-      text-align: center;
+      align-items: center;
       justify-content: center;
     }
 

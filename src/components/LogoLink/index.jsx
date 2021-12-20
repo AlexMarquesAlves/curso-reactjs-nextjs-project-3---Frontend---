@@ -1,13 +1,14 @@
 import P from 'prop-types';
 import * as Styled from './styles';
 import { Heading } from '../Heading';
+import { Link } from 'react-router-dom';
 
-export const LogoLink = ({ text, scrImg = '', link }) => {
+export const LogoLink = ({ text, srcImg = '', link }) => {
   return (
     <Heading size="small" uppercase>
       <Styled.Container href={link}>
-        {!!scrImg && <img src={scrImg} alt={text} />}
-        {!scrImg && text}
+        {!!srcImg && <img src={srcImg} alt={text} />}
+        {!srcImg && text}
       </Styled.Container>
     </Heading>
   );
@@ -15,6 +16,6 @@ export const LogoLink = ({ text, scrImg = '', link }) => {
 
 LogoLink.propTypes = {
   text: P.string.isRequired,
-  scrImg: P.string,
+  srcImg: P.string,
   link: P.string.isRequired,
 };

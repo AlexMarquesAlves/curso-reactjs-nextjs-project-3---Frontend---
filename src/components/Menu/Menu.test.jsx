@@ -27,7 +27,7 @@ describe('<Menu />', () => {
       <Menu links={linksMock} logoData={logoData} />,
     );
 
-    const button = screen.getByLabelText('open/close menu');
+    const button = screen.getByLabelText('Open/Close menu');
     const menuContainer = button.nextSibling;
 
     expect(button).toHaveStyleRule('display', 'none');
@@ -38,19 +38,19 @@ describe('<Menu />', () => {
     expect(menuContainer).toHaveStyleRule('opacity', '0', {
       media: theme.media.lteMedium,
     });
-    expect(screen.getByLabelText('open menu')).toBeInTheDocument();
+    expect(screen.getByLabelText('Open menu')).toBeInTheDocument();
 
     fireEvent.click(button);
     expect(menuContainer).toHaveStyleRule('opacity', '1', {
       media: theme.media.lteMedium,
     });
-    expect(screen.getByLabelText('close menu')).toBeInTheDocument();
+    expect(screen.getByLabelText('Close menu')).toBeInTheDocument();
 
     fireEvent.click(menuContainer);
     expect(menuContainer).toHaveStyleRule('opacity', '0', {
       media: theme.media.lteMedium,
     });
-    expect(screen.getByLabelText('open menu')).toBeInTheDocument();
+    expect(screen.getByLabelText('Open menu')).toBeInTheDocument();
   });
 
   it('should not render links', () => {

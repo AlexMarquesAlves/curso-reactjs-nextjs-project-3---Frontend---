@@ -1,6 +1,6 @@
 import { Menu } from '.';
 
-import linksMock from '../NavLinks';
+import linksMock from '../NavLinks/mock';
 
 export default {
   title: 'Menu',
@@ -8,19 +8,16 @@ export default {
   args: {
     links: linksMock,
     logoData: {
-      text: 'logo',
-      link: '#targe',
+      text: 'Logo',
+      link: '#target',
       srcImg: '',
     },
-  },
-  argTypes: {
-    children: { type: 'string' },
   },
 };
 
 export const Template = (args) => {
   return (
-    <div>
+    <div style={{ height: '300vh', background: 'gray' }}>
       <Menu {...args} />
     </div>
   );

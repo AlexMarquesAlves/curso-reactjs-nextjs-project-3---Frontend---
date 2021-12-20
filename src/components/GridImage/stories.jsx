@@ -1,4 +1,5 @@
 import { GridImage } from '.';
+
 import mock from './mock';
 
 export default {

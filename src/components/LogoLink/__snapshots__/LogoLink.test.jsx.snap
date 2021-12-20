@@ -6,17 +6,17 @@ exports[`<LogoLink /> should match snapshot 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-itens: center;
-  -webkit-box-align-itens: center;
-  -ms-flex-align-itens: center;
-  align-itens: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-text-decoration: none;
   text-decoration: none;
   color: inherit;
 }
 
 .c1 > img {
-  max-height: 3rem;
+  height: 3rem;
 }
 
 .c0 {
@@ -32,7 +32,10 @@ exports[`<LogoLink /> should match snapshot 1`] = `
     class="c1"
     href="#target"
   >
-    Olá mundo
+    <img
+      alt="Olá mundo"
+      src="image.jpg"
+    />
   </a>
 </h1>
 `;
