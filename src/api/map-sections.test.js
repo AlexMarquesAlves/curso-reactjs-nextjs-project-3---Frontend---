@@ -5,11 +5,29 @@ import {
   mapSectionTwoColumns,
   mapTextGrid,
 } from './map-sections';
+import pagesFakeData from './dados.json';
 
 describe('map-sections', () => {
   it('should render predefined section if no data', () => {
     const data = mapSections();
     expect(data).toEqual([]);
+  });
+
+  it('should render sections with correct data', () => {
+    const data = mapSections(pagesFakeData[0].sections);
+    expect(data[0].component).toBe('section.section-two-columns');
+  });
+
+  it('should test section with invalid data ', () => {
+    const withNoTextOrImageGrid = mapSections([
+      { __component: 'section.section-grid' },
+    ]);
+    const withNoComponent = mapSections([{}]);
+
+    expect(withNoTextOrImageGrid).toEqual([
+      { __component: 'section.section-grid' },
+    ]);
+    expect(withNoComponent).toEqual([{}]);
   });
 
   it('should map section two columns if data is empty', () => {
