@@ -5,6 +5,7 @@ import { mockBase } from '../Base/mock';
 import * as Styled from './styles';
 import { mapData } from '../../api/map-data';
 import { PageNotFound } from '../PageNotFoud';
+import { Loading } from '../Loading';
 
 function Home() {
   const [data, setData] = useState([]);
@@ -31,7 +32,7 @@ function Home() {
   }
 
   if (data && !data.slug) {
-    return <h1>Carregando...</h1>;
+    return <Loading />;
   }
 
   return <Base {...mockBase} />;
