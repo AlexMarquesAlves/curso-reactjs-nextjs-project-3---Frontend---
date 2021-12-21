@@ -5,7 +5,7 @@ import * as Styled from './styles';
 
 function Home() {
   return (
-    <div className="App">
+    <div className="Home">
       <Base {...mockBase}></Base>
     </div>
   );
