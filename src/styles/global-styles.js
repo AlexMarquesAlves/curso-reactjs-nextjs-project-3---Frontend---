@@ -36,7 +36,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   .table {
-    width:100%;
-    overflow-y:auto;
+    width: 100%;
+    overflow-y: auto;
   }
 `;
