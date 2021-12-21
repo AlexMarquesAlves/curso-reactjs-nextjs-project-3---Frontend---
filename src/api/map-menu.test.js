@@ -1,7 +1,7 @@
 import { mapMenu, mapMenuLinks } from './map-menu';
 
 describe('map-menu', () => {
-  it('should return a predefined object if there is not data', () => {
+  it('should return a predefined object if no data', () => {
     const menu = mapMenu();
     expect(menu.newTab).toBe(false);
     expect(menu.text).toBe('');
@@ -9,7 +9,7 @@ describe('map-menu', () => {
     expect(menu.link).toBe('');
   });
 
-  it('should map menu to match key and values required', () => {
+  it('should map menu to match keys and values required', () => {
     const menu = mapMenu({
       open_in_new_tab: false,
       logo_text: 'Landing Page',
@@ -39,7 +39,7 @@ describe('map-menu', () => {
     expect(menu.links[0].link).toBe('#pricing');
   });
 
-  it('should return an empty array if there is no links', () => {
+  it('should return an empty array if no links', () => {
     const links = mapMenuLinks();
     expect(links).toEqual([]);
   });

@@ -4,6 +4,7 @@ const rotate = () => keyframes`
   0% {
     transform: translate(-50%, -50%) rotate(0deg);
   }
+
   100% {
     transform: translate(-50%, -50%) rotate(360deg);
   }
@@ -18,6 +19,7 @@ export const Container = styled.div`
     right: 0;
     z-index: 10;
     background-color: ${theme.colors.primaryColor};
+
     &:before,
     &:after {
       content: '';
@@ -30,6 +32,7 @@ export const Container = styled.div`
       border-style: solid;
       border-radius: 50%;
     }
+
     &:after {
       width: 6rem;
       height: 6rem;
@@ -37,6 +40,7 @@ export const Container = styled.div`
       border-top: 0.5rem solid ${theme.colors.secondaryColor};
       animation: ${rotate()} 600ms linear infinite;
     }
+
     &:before {
       width: 2rem;
       height: 2rem;
